@@ -1,17 +1,6 @@
 {
-  "name": "codefolio-monorepo",
-  "version": "1.0.0",
-  "private": true,
-  "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
-    "dev:server": "npm --prefix server run dev",
-    "dev:client": "npm --prefix client run dev",
-    "build": "npm --prefix client run build",
-    "seed": "npm --prefix server run seed",
-    "install:all": "npm install && npm --prefix server install && npm --prefix client install"
-  },
-  "devDependencies": {
-    "concurrently": "^9.1.2"
+    "install-client": "npm --prefix client install",
+    "build": "npm --prefix client install && npm --prefix client run build"
   }
 }
